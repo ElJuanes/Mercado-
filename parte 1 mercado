@@ -10,4 +10,10 @@ namespace Mercado
             string busqueda_usuario = "";
             string menu = "";
             int cantidad_productos = 0;
-
+            int costo_banano = 900;
+            int costo_huevo = 600;
+            int costo_mortadela = 4500;
+            int costo_campi = 3000;
+            int total = 0;
+            int pago_cliente = 0;
+            
