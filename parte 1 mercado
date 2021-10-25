@@ -202,4 +202,19 @@ namespace Mercado
                     Console.WriteLine(total1);
                 }
 
+                Console.WriteLine("El total de lo comprado es de");
+                Console.WriteLine(total);
 
+                inicio();
+
+            }
+
+            if (menu == "BUSCAR")
+            {
+                Console.WriteLine("hola amiguin, que es lo que estas buscando: ");
+                busqueda_usuario = Console.ReadLine().ToUpper();
+
+                Console.WriteLine($"{Buscar(busqueda_usuario, costo_banano, costo_huevo, costo_mortadela, costo_campi)}");
+                inicio();
+
+                string Buscar(string busqueda_usuario, int costo_banano, int costo_huevo, int costo_mortadela, int costo_campi)
