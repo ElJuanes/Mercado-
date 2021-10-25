@@ -51,6 +51,16 @@ namespace Mercado
 
                 Console.WriteLine(Pagar_Cuenta(pago_cliente));
                 inicio();
+                
+                 string Pagar_Cuenta(int pago_cliente)
+                {
+                    string resultado = "";
+
+                    if (pago_cliente <= total)
+                    {
+                        int falta = total - pago_cliente;
+                        Console.WriteLine($"Al cliente le hace falta {falta}");
+                    }
 
 
 
