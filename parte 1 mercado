@@ -61,6 +61,17 @@ namespace Mercado
                         int falta = total - pago_cliente;
                         Console.WriteLine($"Al cliente le hace falta {falta}");
                     }
+                     else
+                    {
+                        int sobra = pago_cliente - total;
+                        Console.WriteLine($"Al cliente le sobra {sobra}");
+                    }
+
+                    return resultado;
+                }
+
+                    
+                  
 
 
 
