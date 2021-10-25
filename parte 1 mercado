@@ -162,6 +162,10 @@ namespace Mercado
                         }
 
                     }
+                    catch (Exception error)
+                    {
+                        throw new Exception("" + error);
+                    }
                         
                         
                      
