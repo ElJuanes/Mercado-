@@ -174,7 +174,18 @@ namespace Mercado
                 }
             }
                         
-                        
+                  if (menu == "CREDITOS")
+            {
+                Console.WriteLine("Samuel Kuger Muriel");
+                Console.WriteLine("Juan Esteban Aristizabal");
+                Console.WriteLine("jose Santiago Restrepo");
+                inicio();
+            }
+
+            if (menu == "SALIR")
+            {
+                Environment.Exit(1);
+            }       
                      
                         
 
