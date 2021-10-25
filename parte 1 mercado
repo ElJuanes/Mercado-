@@ -111,6 +111,21 @@ namespace Mercado
                 }
 
             }
+            
+            if (menu == "SUMAR")
+            {
+                Console.WriteLine("¿Cuántos productos serán los buscados?");
+                cantidad_productos = int.Parse(Console.ReadLine());
+                
+
+                for (int i = 0; i < cantidad_productos; i++)
+                {
+                    Console.WriteLine("¿Qué producto estás buscando? (banano, campi, mortadela, huevo)");
+                    busqueda_usuario = Console.ReadLine().ToUpper();
+
+                    Console.WriteLine($"{Buscar_Rapida_Productos(busqueda_usuario)}");
+                    
+                }
                         
 
                     
