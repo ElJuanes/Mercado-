@@ -1,0 +1,8 @@
+else if (busqueda_usuario == "HUEVO")
+                        {
+                            total += costo_huevo;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_huevo} pesos y la cuenta es de {total}";
+                        }
+                        else if (busqueda_usuario == "MORTADELA")
+                        {
+                            total += costo_mortadela;
