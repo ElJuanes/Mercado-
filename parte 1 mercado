@@ -221,7 +221,19 @@ namespace Mercado
                 string Buscar(string busqueda_usuario, int costo_banano, int costo_huevo, int costo_mortadela, int costo_campi)
                 {
    
-                  
+                 string busqueda = "a";
+                    try
+                    {
+                        if (busqueda_usuario == "BANANO")
+                        {
+                            busqueda = $"se pudo encontrara el producto: {busqueda_usuario} en el inventario, este vale {costo_banano} pesos cada una";
+
+                        }
+                        else if (busqueda_usuario == "HUEVO")
+                        {
+                            busqueda = $"se pudo encontrara el producto: {busqueda_usuario} en el inventario, este vale {costo_huevo} pesos cada uno";
+
+                        } 
 
 
 
