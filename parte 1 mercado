@@ -17,3 +17,13 @@ namespace Mercado
             int total = 0;
             int pago_cliente = 0;
             
+            usuarios();
+
+            void usuarios()
+            {
+                Console.WriteLine("Hola Bienvenido a la tienda del mono");
+                Console.WriteLine("Cual es tu usuario: ");
+                usuario = Console.ReadLine().ToUpper();
+                inicio();
+            }
+
