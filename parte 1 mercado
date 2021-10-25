@@ -85,6 +85,14 @@ namespace Mercado
                             total += costo_huevo;
                             busqueda = $"El producto: {busqueda_usuario} vale {costo_huevo} pesos y la cuenta es de {total}";
                         }
+                        
+                        else if (busqueda_usuario == "MORTADELA")
+                        {
+                            total += costo_mortadela;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_mortadela} pesos y la cuenta es de {total}";
+                        }
+                        
+                        
 
                     
                   
