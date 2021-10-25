@@ -26,4 +26,11 @@ namespace Mercado
                 usuario = Console.ReadLine().ToUpper();
                 inicio();
             }
+            
+            void inicio()
+            {
+                menu = "";
+                Console.WriteLine($"Hola {usuario} que deseas hacer: Buscar, Comprar, Sumar, Cuentas, Creditos o Salir");
+                menu = Console.ReadLine().ToUpper();
+            }
 
