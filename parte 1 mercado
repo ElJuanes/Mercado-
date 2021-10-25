@@ -182,5 +182,14 @@ namespace Mercado
                 inicio();
             }
 
+            if (menu == "SALIR")
+            {
+                Environment.Exit(1);
+            }
+
+            if (menu == "CUENTAS")
+            {
            
+
+
 
