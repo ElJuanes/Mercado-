@@ -1,0 +1,24 @@
+ else if (busqueda_usuario == "HUEVO")
+                        {
+                            total += costo_huevo;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_huevo} pesos y la cuenta es de {total}";
+                        }
+                        else if (busqueda_usuario == "MORTADELA")
+                        {
+                            total += costo_mortadela;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_mortadela} pesos y la cuenta es de {total}";
+                        }
+                        else if (busqueda_usuario == "CAMPI")
+                        {
+                            total += costo_campi;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_campi} pesos y la cuenta es de {total}";
+                        }
+                        else
+                        {
+                            busqueda = $"no se ha podidio encontrar el producto {busqueda_usuario} en el inventario";
+                        }
+                    }
+                    catch (Exception error)
+                    {
+                        throw new Exception("no se pudo usar el metodo, sos re malo programando" + error);
+                    }
