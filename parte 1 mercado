@@ -190,6 +190,16 @@ namespace Mercado
             if (menu == "CUENTAS")
             {
            
-
+                int total1 = pago_cliente - total;
+                Console.WriteLine("Su saldo restante es");
+                if (total1 < 0)
+                {
+                    Console.WriteLine(total1);
+                    Console.WriteLine($"{usuario}estas fiando mi bro");
+                }
+                else if (total1 > 0)
+                {
+                    Console.WriteLine(total1);
+                }
 
 
