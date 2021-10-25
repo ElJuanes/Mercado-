@@ -92,6 +92,12 @@ namespace Mercado
                             busqueda = $"El producto: {busqueda_usuario} vale {costo_mortadela} pesos y la cuenta es de {total}";
                         }
                         
+                        else if (busqueda_usuario == "CAMPI")
+                        {
+                            total += costo_campi;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_campi} pesos y la cuenta es de {total}";
+                        }
+                        
                         
 
                     
