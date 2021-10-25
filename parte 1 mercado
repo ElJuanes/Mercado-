@@ -235,5 +235,18 @@ namespace Mercado
 
                         } 
 
+                     else if (busqueda_usuario == "MORTADELA")
+                        {
+                            busqueda = $"se pudo encontrara el producto: {busqueda_usuario} en el inventario, este vale {costo_mortadela} pesos cada uno";
 
+                        }
+                        else if (busqueda_usuario == "CAMPI")
+                        {
+                            busqueda = $"se pudo encontrara el producto: {busqueda_usuario} en el inventario, este vale {costo_campi} pesos cada una";
+
+                        }
+                        else
+                        {
+                            busqueda = $"no se ha podidio encontrar el producto {busqueda_usuario} en el inventario";
+                        }
 
