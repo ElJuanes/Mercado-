@@ -46,4 +46,11 @@ namespace Mercado
 
                     Console.WriteLine($"{Buscar_Rapida_Productos(busqueda_usuario)}");
                 }
+                                Console.WriteLine("Con cuanto deseas pagar?");
+                pago_cliente = int.Parse(Console.ReadLine());
+
+                Console.WriteLine(Pagar_Cuenta(pago_cliente));
+                inicio();
+
+
 
