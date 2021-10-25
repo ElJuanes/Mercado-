@@ -126,6 +126,20 @@ namespace Mercado
                     Console.WriteLine($"{Buscar_Rapida_Productos(busqueda_usuario)}");
                     
                 }
+                
+                inicio();
+
+                string Buscar_Rapida_Productos(string busqueda_usuario)
+                {
+                    string busqueda = "a";
+                    
+                    try
+                    {
+                        if (busqueda_usuario == "BANANO")
+                        {
+                            total += costo_banano;
+                            busqueda = $"El producto: {busqueda_usuario} vale {costo_banano} pesos y la cuenta es de {total}";
+                        }
                         
 
                     
