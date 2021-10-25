@@ -33,4 +33,17 @@ namespace Mercado
                 Console.WriteLine($"Hola {usuario} que deseas hacer: Buscar, Comprar, Sumar, Cuentas, Creditos o Salir");
                 menu = Console.ReadLine().ToUpper();
             }
+                        if (menu == "COMPRAR")
+            {
+                Console.WriteLine("¿Cuántos productos serán los buscados?");
+                cantidad_productos = int.Parse(Console.ReadLine());
+
+
+                for (int i = 0; i < cantidad_productos; i++)
+                {
+                    Console.WriteLine("¿Qué producto estás buscando?");
+                    busqueda_usuario = Console.ReadLine().ToUpper();
+
+                    Console.WriteLine($"{Buscar_Rapida_Productos(busqueda_usuario)}");
+                }
 
